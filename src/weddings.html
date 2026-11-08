@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wedding Cakes &amp; Desserts in Kegalle | Kegalu Cake Hub</title>
+  <meta name="description" content="Wedding cakes, cupcakes, mini cakes and slab cakes by Kegalu Cake Hub in Kegalle. See provisional price guides and request a personal WhatsApp quote.">
+  <link rel="canonical" href="{{SITE_URL}}/weddings">
+  <meta name="theme-color" content="#fbf6ef">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{SITE_NAME}}">
+  <meta property="og:title" content="Wedding Cakes &amp; Desserts | Kegalu Cake Hub">
+  <meta property="og:description" content="Wedding cakes, cupcakes, mini cakes and slab cakes made in Kegalle. Request a quote on WhatsApp.">
+  <meta property="og:url" content="{{SITE_URL}}/weddings">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A wedding cake by Kegalu Cake Hub">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wedding Cakes &amp; Desserts | Kegalu Cake Hub">
+  <meta name="twitter:description" content="Wedding cakes, cupcakes, mini cakes and slab cakes made in Kegalle.">
+  <meta name="twitter:image" content="{{OG_IMAGE}}">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icon-180.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/boot.js"></script>
+</head>
+<body>
+  {{> header.html}}
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span aria-hidden="true">/</span>
+          <span>Weddings</span>
+        </nav>
+
+        <div class="page-hero__grid">
+          <div>
+            <span class="script-kicker">For the day you will remember</span>
+            <h1>Wedding cakes &amp; celebration desserts</h1>
+            <p class="lede">From a tiered centrepiece to cupcakes and mini cakes for your guests, every wedding order is designed and quoted individually.</p>
+            <div class="page-hero__stats">
+              <div><strong>4</strong><span>Dessert categories</span></div>
+              <div><strong>10–14</strong><span>Days notice advised</span></div>
+              <div><strong>1</strong><span>Quote request</span></div>
+            </div>
+          </div>
+          <aside class="page-hero__aside">
+            <strong>Every wedding quote is personal</strong>
+            The figures below are provisional guidance, not final prices. Send your date, design idea and quantity and we will confirm your quote on WhatsApp.
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--flush-top">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div class="section-head__text">
+            <span class="script-kicker">Choose your centrepiece</span>
+            <h2>The centrepiece &amp; the extras</h2>
+            <p class="lede">Mix a wedding cake with cupcakes or mini cakes for your dessert table. We will help you plan quantities for your guest list.</p>
+          </div>
+          <a class="text-link" href="gallery?category=wedding">
+            See wedding gallery
+            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-arrow-right"></use></svg>
+          </a>
+        </div>
+
+        <div class="wedding-grid">
+          {{WEDDING_CARDS}}
+        </div>
+
+        <div class="notice notice--gold mt-lg">
+          <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-star"></use></svg>
+          <p><strong>About these figures:</strong> {{WEDDING_DISCLAIMER}}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper" id="enquiry">
+      <div class="container">
+        <div class="enquiry-layout">
+          <aside class="enquiry-aside">
+            <span class="script-kicker">Let's plan together</span>
+            <h2>Request your wedding quote</h2>
+            <p class="lede">Tell us what you are celebrating and what you have in mind. The more detail you share, the more accurate our quote can be.</p>
+
+            <div class="steps">
+              <div class="step">
+                <span class="step__num">1</span>
+                <div>
+                  <strong>Share your details</strong>
+                  <p>Date, guest count, category and the design you are imagining.</p>
+                </div>
+              </div>
+              <div class="step">
+                <span class="step__num">2</span>
+                <div>
+                  <strong>We confirm the design and price</strong>
+                  <p>We reply on WhatsApp with availability, suggestions and your final quote.</p>
+                </div>
+              </div>
+              <div class="step">
+                <span class="step__num">3</span>
+                <div>
+                  <strong>Reserve your date</strong>
+                  <p>Once you are happy with the quote, we confirm the details directly with you.</p>
+                </div>
+              </div>
+            </div>
+
+            <p class="reviews-note mt-lg">Recommended notice: 10–14 days for wedding cakes. If your date is sooner, message us and we will tell you honestly whether it is possible.</p>
+          </aside>
+
+          <div class="form-card">
+            <form id="enquiry-form" data-form="enquiry" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="enq-name">Your name <span class="required" aria-hidden="true">*</span></label>
+                  <input id="enq-name" name="name" type="text" autocomplete="name" required aria-describedby="enq-name-error">
+                  <p class="field-error" id="enq-name-error" data-error-for="name"></p>
+                </div>
+
+                <div class="field">
+                  <label for="enq-contact">WhatsApp / contact number <span class="required" aria-hidden="true">*</span></label>
+                  <input id="enq-contact" name="contact" type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 076 123 4567" required aria-describedby="enq-contact-error">
+                  <p class="field-error" id="enq-contact-error" data-error-for="contact"></p>
+                </div>
+
+                <div class="field">
+                  <label for="enq-event">Event type <span class="required" aria-hidden="true">*</span></label>
+                  <select id="enq-event" name="event" required aria-describedby="enq-event-error">
+                    <option value="" disabled selected>Select event type</option>
+                    {{EVENT_OPTIONS}}
+                  </select>
+                  <p class="field-error" id="enq-event-error" data-error-for="event"></p>
+                </div>
+
+                <div class="field">
+                  <label for="enq-date">Event date <span class="required" aria-hidden="true">*</span></label>
+                  <input id="enq-date" name="date" type="date" required aria-describedby="enq-date-error">
+                  <p class="field-error" id="enq-date-error" data-error-for="date"></p>
+                </div>
+
+                <div class="field">
+                  <label for="enq-category">Product category <span class="required" aria-hidden="true">*</span></label>
+                  <select id="enq-category" name="category" required aria-describedby="enq-category-error">
+                    <option value="" disabled selected>Select a category</option>
+                    {{CATEGORY_OPTIONS}}
+                  </select>
+                  <p class="field-error" id="enq-category-error" data-error-for="category"></p>
+                </div>
+
+                <div class="field">
+                  <label for="enq-quantity">Quantity / size <span class="required" aria-hidden="true">*</span></label>
+                  <input id="enq-quantity" name="quantity" type="text" placeholder="e.g. 12 cupcakes, 2-tier cake" required aria-describedby="enq-quantity-error">
+                  <p class="field-error" id="enq-quantity-error" data-error-for="quantity"></p>
+                </div>
+
+                <div class="field">
+                  <label for="enq-theme">Preferred design / theme</label>
+                  <input id="enq-theme" name="theme" type="text" placeholder="e.g. ivory and burgundy, simple florals">
+                  <p class="field-hint">Optional — colours, style or a design you have seen.</p>
+                </div>
+
+                <div class="field">
+                  <label for="enq-budget">Budget</label>
+                  <input id="enq-budget" name="budget" type="text" inputmode="numeric" placeholder="Optional">
+                  <p class="field-hint">Optional — helps us suggest suitable options.</p>
+                </div>
+
+                <div class="field field--full">
+                  <label for="enq-reference">Reference image or link</label>
+                  <input id="enq-reference" name="reference" type="url" placeholder="https://..." aria-describedby="enq-reference-error enq-reference-hint">
+                  <p class="field-hint" id="enq-reference-hint">Optional — paste a link, or send reference photos in the same WhatsApp chat.</p>
+                  <p class="field-error" id="enq-reference-error" data-error-for="reference"></p>
+                </div>
+
+                <div class="field field--full">
+                  <label for="enq-notes">Additional requirements</label>
+                  <textarea id="enq-notes" name="notes" placeholder="Delivery area, guest count, flavours, allergies or anything else we should know."></textarea>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-whatsapp" type="submit">
+                  <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-whatsapp"></use></svg>
+                  Prepare WhatsApp enquiry
+                </button>
+                <p class="form-consent">This opens WhatsApp with your details filled in. Nothing is sent until you press send in WhatsApp. Your final price is confirmed by the business.</p>
+              </div>
+
+              <div class="form-status" id="enquiry-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="script-kicker">Reorder the order</span>
+          <h2>Planning notes for your wedding</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>How far in advance should we order?</summary>
+            <p>We recommend 10–14 days for wedding cakes. Larger or more detailed orders may need more time, so message us as early as you can with your date.</p>
+          </details>
+          <details>
+            <summary>Can we mix a wedding cake with cupcakes or mini cakes?</summary>
+            <p>Yes. Many couples choose a smaller wedding cake for the cutting moment and cupcakes or mini cakes for guests. Tell us your guest count in the enquiry and we will help you plan quantities.</p>
+          </details>
+          <details>
+            <summary>Are the website figures the final price?</summary>
+            <p>No. They are provisional guidance from the business. Your final quote depends on design, size, decorations and requirements, and is confirmed directly on WhatsApp before you order.</p>
+          </details>
+          <details>
+            <summary>Can you match a design we found online?</summary>
+            <p>Share a reference link or photo and we will tell you what is possible for your date, size and budget before you commit.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--flush-top">
+      <div class="container">
+        <div class="cta-band">
+          <span class="script-kicker">Save your date</span>
+          <h2>Let's talk about your wedding cake.</h2>
+          <p>Send your date and ideas directly on WhatsApp. We will reply with availability and a personal quote for your celebration.</p>
+          <div class="cta-band__actions">
+            <a class="btn btn-whatsapp" href="{{WA_WEDDING}}" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-whatsapp"></use></svg>
+              Message us on WhatsApp
+            </a>
+            <a class="btn btn-secondary" href="gallery?category=wedding">View wedding gallery</a>
+          </div>
+          <p class="cta-band__phone">Or call <a href="tel:{{PHONE_E164}}">{{PHONE_DISPLAY}}</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {{> footer.html}}
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cake Gallery | Birthday, Wedding &amp; Custom Cakes | Kegalu Cake Hub</title>
+  <meta name="description" content="Browse real cakes by Kegalu Cake Hub in Kegalle — birthday, chocolate, vanilla, custom, wedding, cupcake, mini cake and slab designs. Message us to order.">
+  <link rel="canonical" href="{{SITE_URL}}/gallery">
+  <meta name="theme-color" content="#fbf6ef">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{SITE_NAME}}">
+  <meta property="og:title" content="Cake Gallery | Kegalu Cake Hub">
+  <meta property="og:description" content="Real birthday, wedding, custom and slab cakes made in Kegalle, Sri Lanka.">
+  <meta property="og:url" content="{{SITE_URL}}/gallery">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A celebration cake by Kegalu Cake Hub">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cake Gallery | Kegalu Cake Hub">
+  <meta name="twitter:description" content="Browse real cakes by Kegalu Cake Hub in Kegalle, Sri Lanka.">
+  <meta name="twitter:image" content="{{OG_IMAGE}}">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icon-180.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/boot.js"></script>
+
+  {{GALLERY_JSONLD}}
+</head>
+<body>
+  {{> header.html}}
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span aria-hidden="true">/</span>
+          <span>Cake gallery</span>
+        </nav>
+
+        <div class="page-hero__grid">
+          <div>
+            <span class="script-kicker">Made in our kitchen</span>
+            <h1>The cake gallery</h1>
+            <p class="lede">Browse real cakes made for birthdays, weddings and celebrations around Kegalle. Every design can be discussed and adapted for your date.</p>
+            <div class="page-hero__stats">
+              <div><strong>{{GALLERY_COUNT}}</strong><span>Cake designs</span></div>
+              <div><strong>8</strong><span>Categories</span></div>
+              <div><strong>{{GOOGLE_RATING}}/5</strong><span>Google rating</span></div>
+            </div>
+          </div>
+          <aside class="page-hero__aside">
+            <strong>How to order a design</strong>
+            Choose the cake you love, tap Enquire, and send us your date and size on WhatsApp. We will confirm availability and the final price before you order.
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--flush-top">
+      <div class="filter-wrap">
+        <div class="container">
+          <div class="filter-bar" role="group" aria-label="Filter cakes by category">
+            {{GALLERY_FILTERS}}
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <p class="gallery-status" id="gallery-status" aria-live="polite">Showing all {{GALLERY_COUNT}} cake designs.</p>
+
+        <h2 class="sr-only">Cake designs</h2>
+        <div class="gallery-grid" id="gallery-grid">
+          {{GALLERY_GRID}}
+        </div>
+
+        <div class="gallery-empty" id="gallery-empty">
+          <h2>No cakes in this category yet</h2>
+          <p>We may still be able to make what you have in mind. Send us a message with your idea and we will let you know.</p>
+          <div class="hero__actions actions-center">
+            <button class="btn btn-secondary" type="button" data-filter-reset>Show all cakes</button>
+            <a class="btn btn-whatsapp" href="{{WA_CUSTOM}}" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-whatsapp"></use></svg>
+              Ask about a custom cake
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper">
+      <div class="container">
+        <div class="section-head">
+          <span class="script-kicker">Little extras</span>
+          <h2>Small treats &amp; gift boxes</h2>
+          <p class="lede">Jar cakes, brownies and cupcakes for gifting, dessert tables and office celebrations. Ask us about quantities and current prices.</p>
+        </div>
+        <div class="small-treats">
+          {{SMALL_TREATS}}
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band">
+          <span class="script-kicker">Something just for you</span>
+          <h2>Have a design in mind that you have not seen here?</h2>
+          <p>Send us a reference picture, your colours and the occasion. We will talk through the design and confirm the price before you order.</p>
+          <div class="cta-band__actions">
+            <a class="btn btn-whatsapp" href="{{WA_CUSTOM}}" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-whatsapp"></use></svg>
+              Send your design idea
+            </a>
+            <a class="btn btn-secondary" href="prices">View standard prices</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="lightbox" id="cake-lightbox" aria-labelledby="lightbox-title">
+    <div class="lightbox__panel">
+      <div class="lightbox__media">
+        <img id="lightbox-img" src="assets/img/opt/butterfly-480.webp" alt="" width="800" height="1000">
+      </div>
+      <div class="lightbox__body">
+        <p class="lightbox__kicker" id="lightbox-category"></p>
+        <h2 class="lightbox__title" id="lightbox-title"></h2>
+        <p class="lightbox__desc" id="lightbox-desc"></p>
+        <p class="sr-only" id="lightbox-hint">Use the previous and next buttons, or the left and right arrow keys, to move between cakes.</p>
+        <div class="lightbox__actions">
+          <a class="btn btn-whatsapp btn-small" id="lightbox-wa" href="{{WA_ORDER}}" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-whatsapp"></use></svg>
+            Enquire on WhatsApp
+          </a>
+          <a class="btn btn-secondary btn-small" id="lightbox-fb" href="{{FB_URL}}" target="_blank" rel="noopener" hidden>
+            View original post
+            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-arrow-up-right"></use></svg>
+          </a>
+        </div>
+      </div>
+      <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close cake details">
+        <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-close"></use></svg>
+      </button>
+      <button class="lightbox__nav lightbox__nav--prev" type="button" data-lightbox-prev aria-label="Previous cake">
+        <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-chevron-left"></use></svg>
+      </button>
+      <button class="lightbox__nav lightbox__nav--next" type="button" data-lightbox-next aria-label="Next cake">
+        <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-chevron-right"></use></svg>
+      </button>
+    </div>
+  </dialog>
+
+  {{> footer.html}}
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/gallery.js"></script>
+</body>
+</html>

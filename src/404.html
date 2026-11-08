@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Not Found | Kegalu Cake Hub</title>
+  <meta name="description" content="This page could not be found. Return to Kegalu Cake Hub to browse cakes, prices and wedding desserts.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#fbf6ef">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icon-180.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/boot.js"></script>
+</head>
+<body>
+  {{> header.html}}
+
+  <main id="main">
+    <div class="container">
+      <div class="error-page">
+        <div>
+          <p class="error-code">404</p>
+          <span class="script-kicker">A little slice is missing</span>
+          <h1>We could not find that page.</h1>
+          <p>The link may have changed or the page may no longer exist. Let's get you back to the cakes.</p>
+          <div class="hero__actions actions-center">
+            <a class="btn btn-primary" href="/">Back to home</a>
+            <a class="btn btn-secondary" href="gallery">Cake gallery</a>
+            <a class="btn btn-whatsapp" href="{{WA_ORDER}}" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-whatsapp"></use></svg>
+              Order on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="sr-only">Explore Kegalu Cake Hub</h2>
+  </main>
+
+  {{> footer.html}}
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

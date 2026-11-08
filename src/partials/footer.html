@@ -1,0 +1,83 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="/" aria-label="{{SITE_NAME}} — home">
+        <img class="brand__logo" src="assets/img/brand/logo-96.webp"
+          srcset="assets/img/brand/logo-96.webp 96w, assets/img/brand/logo-192.webp 192w"
+          sizes="44px" width="742" height="742" alt="Kegalu Cake Hub — Bake with Love">
+      </a>
+      <p>Homemade celebration cakes, baked in small batches in Kegalle, Sri Lanka. Every cake is made to order for your celebration.</p>
+      <div class="social-row">
+        <a href="{{FB_URL}}" target="_blank" rel="noopener" aria-label="Kegalu Cake Hub on Facebook">
+          <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-facebook"></use></svg>
+        </a>
+        <a href="{{WA_ORDER}}" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+          <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-whatsapp"></use></svg>
+        </a>
+        <a href="{{GOOGLE_REVIEW_URL}}" target="_blank" rel="noopener" aria-label="Read Kegalu Cake Hub reviews on Google">
+          <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-star"></use></svg>
+        </a>
+        <a href="tel:{{PHONE_E164}}" aria-label="Call {{PHONE_DISPLAY}}">
+          <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-phone"></use></svg>
+        </a>
+      </div>
+      <a class="btn btn-rate" href="{{GOOGLE_REVIEW_URL}}" target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-star"></use></svg>
+        Rate us on Google
+      </a>
+    </div>
+
+    <div class="footer-col">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="gallery">Cake gallery</a></li>
+        <li><a href="prices">Cake prices</a></li>
+        <li><a href="weddings">Wedding &amp; celebration cakes</a></li>
+        <li><a href="social">Facebook posts &amp; Reels</a></li>
+        <li><a href="/#reviews">Customer reviews</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Order</h3>
+      <ul>
+        <li><a href="{{WA_ORDER}}" target="_blank" rel="noopener">WhatsApp orders</a></li>
+        <li><a href="tel:{{PHONE_E164}}">{{PHONE_DISPLAY}}</a></li>
+        <li><a href="prices">Standard cake prices</a></li>
+        <li><a href="weddings#enquiry">Request a quote</a></li>
+        <li><a href="contact">How to order</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Find us</h3>
+      <address>
+        {{ADDRESS_LINE1}}<br>
+        {{ADDRESS_CITY}}<br>
+        {{ADDRESS_COUNTRY}}
+      </address>
+      <ul class="mt-md">
+        <li><a href="{{DIRECTIONS_URL}}" target="_blank" rel="noopener">Get directions</a></li>
+        <li><a href="{{GOOGLE_URL}}" target="_blank" rel="noopener">Google listing</a></li>
+        <li><a href="{{FB_URL}}" target="_blank" rel="noopener">Facebook page</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© {{YEAR}} {{SITE_NAME}} · {{ADDRESS_CITY}} · All rights reserved.</p>
+    <p>{{PRICE_DISCLAIMER}}</p>
+  </div>
+</footer>
+
+<div class="mobile-bar" aria-label="Quick order">
+  <div class="mobile-bar__inner">
+    <a class="btn btn-whatsapp" href="{{WA_ORDER}}" target="_blank" rel="noopener">
+      <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-whatsapp"></use></svg>
+      Order on WhatsApp
+    </a>
+    <a class="btn btn-secondary" href="tel:{{PHONE_E164}}" aria-label="Call {{PHONE_DISPLAY}}">
+      <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-phone"></use></svg>
+    </a>
+  </div>
+</div>

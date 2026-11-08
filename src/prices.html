@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cake Prices in Kegalle | 500g &amp; 1kg Cakes | Kegalu Cake Hub</title>
+  <meta name="description" content="Check 500g and 1kg vanilla or chocolate cake prices at Kegalu Cake Hub in Kegalle. Select your cake to see the price, or ask us on WhatsApp.">
+  <link rel="canonical" href="{{SITE_URL}}/prices">
+  <meta name="theme-color" content="#fbf6ef">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{SITE_NAME}}">
+  <meta property="og:title" content="Cake Prices | Kegalu Cake Hub">
+  <meta property="og:description" content="Select a 500g or 1kg vanilla or chocolate cake and see the price, or confirm current prices on WhatsApp.">
+  <meta property="og:url" content="{{SITE_URL}}/prices">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A celebration cake by Kegalu Cake Hub">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cake Prices | Kegalu Cake Hub">
+  <meta name="twitter:description" content="See standard cake prices in Kegalle, or confirm on WhatsApp.">
+  <meta name="twitter:image" content="{{OG_IMAGE}}">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icon-180.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/boot.js"></script>
+</head>
+<body>
+  {{> header.html}}
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span aria-hidden="true">/</span>
+          <span>Prices</span>
+        </nav>
+
+        <div class="page-hero__grid">
+          <div>
+            <span class="script-kicker">Simple and straightforward</span>
+            <h1>Cake prices</h1>
+            <p class="lede">Choose a weight and flavour to see the price for that exact cake. We never double a 500g price to guess a 1kg price — each combination is listed on its own.</p>
+            <div class="page-hero__stats">
+              <div><strong>2</strong><span>Weights</span></div>
+              <div><strong>2</strong><span>Flavours</span></div>
+              <div><strong>1</strong><span>WhatsApp order</span></div>
+            </div>
+          </div>
+          <aside class="page-hero__aside">
+            <strong>Prices are confirmed personally</strong>
+            Where a price has not been finalised yet, the website says “Price to be confirmed”. Message us on WhatsApp and we will confirm the price for your chosen cake before you order.
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--flush-top">
+      <div class="container">
+        <div class="price-layout">
+          <div class="config-card">
+            <span class="eyebrow">Build your cake</span>
+            <h2 class="sr-only">Choose your cake weight, flavour and design</h2>
+
+            <form id="price-form">
+              <fieldset class="fieldset">
+                <legend>1. Choose a weight</legend>
+                <div class="choice-grid">
+                  {{WEIGHT_OPTIONS}}
+                </div>
+              </fieldset>
+
+              <fieldset class="fieldset">
+                <legend>2. Choose a flavour</legend>
+                <div class="choice-grid">
+                  {{FLAVOR_OPTIONS}}
+                </div>
+              </fieldset>
+
+              <fieldset class="fieldset">
+                <legend>3. Design category <span class="muted legend-note">(optional)</span></legend>
+                <div class="field">
+                  <label class="sr-only" for="price-design">Design category</label>
+                  <select id="price-design" name="design">
+                    {{DESIGN_OPTIONS}}
+                  </select>
+                  <p class="field-hint">Decoration can change the final quote. We will confirm it with you.</p>
+                </div>
+              </fieldset>
+
+              <div class="notice notice--gold">
+                <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-star"></use></svg>
+                <p><strong>No payment is taken on this website.</strong> Every price is confirmed by {{SITE_NAME}} on WhatsApp before an order is accepted. {{PRICE_NOTE}}</p>
+              </div>
+            </form>
+          </div>
+
+          <aside class="price-summary" aria-labelledby="price-summary-title">
+            <p class="price-summary__kicker" id="price-summary-title">Your selection</p>
+            <p class="price-summary__value is-pending" id="price-value" aria-live="polite">Price to be confirmed</p>
+            <p class="price-summary__note" id="price-note">This combination has not been priced on the website yet. We will confirm it on WhatsApp.</p>
+
+            <dl class="summary-list">
+              <div class="summary-list__row"><dt>Weight</dt><dd id="summary-weight">500g</dd></div>
+              <div class="summary-list__row"><dt>Flavour</dt><dd id="summary-flavor">Vanilla</dd></div>
+              <div class="summary-list__row"><dt>Design</dt><dd id="summary-design">Classic cream finish</dd></div>
+            </dl>
+
+            <a class="btn btn-whatsapp" id="price-order" href="{{WA_ORDER}}" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-whatsapp"></use></svg>
+              Order on WhatsApp
+            </a>
+            <p class="price-summary__fine">{{PRICE_DISCLAIMER}}</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper">
+      <div class="container">
+        <div class="section-head">
+          <span class="script-kicker">At a glance</span>
+          <h2>Standard cake price list</h2>
+          <p class="lede">Each weight and flavour is priced independently. Status shows whether the business has confirmed that price on the website.</p>
+        </div>
+
+        <table class="price-table">
+          <caption>Standard 500g and 1kg cakes</caption>
+          <thead>
+            <tr>
+              <th scope="col">Cake</th>
+              <th scope="col">Price</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{PRICE_ROWS}}
+          </tbody>
+        </table>
+
+        <div class="notice mt-lg">
+          <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-check"></use></svg>
+          <p><strong>What the price covers:</strong> the selected weight and flavour of a standard cake. Extra decoration, custom designs, themed cakes and wedding cakes are quoted separately.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="script-kicker">Guide only</span>
+          <h2>Provisional price guidance</h2>
+          <p class="lede">These figures come from the business as a rough guide. They are not a final quote and may change with design and decoration.</p>
+        </div>
+
+        {{PROVISIONAL_500}}
+        {{PROVISIONAL_1KG}}
+
+        <div class="notice mt-lg">
+          <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-whatsapp"></use></svg>
+          <p><strong>Need a current price?</strong> <a class="text-link" href="{{WA_PRICES}}" target="_blank" rel="noopener">Ask on WhatsApp</a> or call <a class="text-link" href="tel:{{PHONE_E164}}">{{PHONE_DISPLAY}}</a>. We will reply with the price for your exact cake.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--flush-top">
+      <div class="container">
+        <div class="cta-band">
+          <span class="script-kicker">Wedding or custom design?</span>
+          <h2>Wedding and custom cakes are quoted individually.</h2>
+          <p>Share your date, design idea and quantity. We will prepare a quote for your celebration and confirm it with you before you order.</p>
+          <div class="cta-band__actions">
+            <a class="btn btn-whatsapp" href="{{WA_WEDDING}}" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-whatsapp"></use></svg>
+              Request a quote
+            </a>
+            <a class="btn btn-secondary" href="weddings">Wedding cakes &amp; desserts</a>
+            <a class="btn btn-secondary" href="gallery">See cake designs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {{> footer.html}}
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/pricing.js"></script>
+</body>
+</html>

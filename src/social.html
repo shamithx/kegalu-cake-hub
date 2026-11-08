@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facebook Posts &amp; Reels | Kegalu Cake Hub</title>
+  <meta name="description" content="Watch recent cake Reels and see real Facebook posts from Kegalu Cake Hub in Kegalle — deliveries, celebrations and new cake designs.">
+  <link rel="canonical" href="{{SITE_URL}}/social">
+  <meta name="theme-color" content="#fbf6ef">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{SITE_NAME}}">
+  <meta property="og:title" content="Facebook Posts &amp; Reels | Kegalu Cake Hub">
+  <meta property="og:description" content="Recent cake Reels and posts from Kegalu Cake Hub in Kegalle.">
+  <meta property="og:url" content="{{SITE_URL}}/social">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A celebration cake by Kegalu Cake Hub">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Facebook Posts &amp; Reels | Kegalu Cake Hub">
+  <meta name="twitter:description" content="Recent cake Reels and posts from Kegalu Cake Hub in Kegalle.">
+  <meta name="twitter:image" content="{{OG_IMAGE}}">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icon-180.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/boot.js"></script>
+</head>
+<body>
+  {{> header.html}}
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span aria-hidden="true">/</span>
+          <span>Facebook</span>
+        </nav>
+
+        <div class="page-hero__grid">
+          <div>
+            <span class="script-kicker">Straight from the kitchen</span>
+            <h1>Posts, Reels &amp; latest creations</h1>
+            <p class="lede">Watch our latest Reels and see recent cakes as they were shared on the official Kegalu Cake Hub Facebook page.</p>
+            <div class="hero__actions">
+              <a class="btn btn-primary" href="{{FB_URL}}" target="_blank" rel="noopener">
+                <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-facebook"></use></svg>
+                Visit our Facebook page
+              </a>
+              <a class="btn btn-whatsapp" href="{{WA_ORDER}}" target="_blank" rel="noopener">
+                <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-whatsapp"></use></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+          <aside class="page-hero__aside">
+            <strong>Real posts, real cakes</strong>
+            The posts below are public content from our official Facebook page. If a Facebook embed does not load, use the link on the card to open it directly on Facebook.
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--flush-top">
+      <div class="container">
+        <div class="section-head">
+          <span class="script-kicker">Moving pictures</span>
+          <h2>Latest Reels</h2>
+          <p class="lede">Short videos of cakes leaving our kitchen and celebrations being cut. Follow our page so you do not miss the next one.</p>
+        </div>
+        <div class="reel-grid">
+          {{REELS}}
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper">
+      <div class="container">
+        <div class="section-head">
+          <span class="script-kicker">Recently on Facebook</span>
+          <h2>Latest posts</h2>
+          <p class="lede">Deliveries, birthday messages and the stories behind recent orders.</p>
+        </div>
+        <div class="post-grid">
+          {{POSTS}}
+        </div>
+
+        <p class="reviews-note mt-lg">These are selected public posts from the official Kegalu Cake Hub page. New posts are added to this page manually; the website does not copy private content or sync automatically.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band">
+          <span class="script-kicker">Follow along</span>
+          <h2>See the next cake before it is collected.</h2>
+          <p>Follow Kegalu Cake Hub on Facebook for new designs and Reels — or send us a message to plan your own celebration.</p>
+          <div class="cta-band__actions">
+            <a class="btn btn-primary" href="{{FB_URL}}" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-facebook"></use></svg>
+              Follow on Facebook
+            </a>
+            <a class="btn btn-whatsapp" href="{{WA_ORDER}}" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#icon-whatsapp"></use></svg>
+              Order on WhatsApp
+            </a>
+            <a class="btn btn-secondary" href="gallery">Browse the gallery</a>
+          </div>
+          <p class="cta-band__phone">Or call us on <a href="tel:{{PHONE_E164}}">{{PHONE_DISPLAY}}</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {{> footer.html}}
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

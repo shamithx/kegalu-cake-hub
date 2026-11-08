@@ -1,0 +1,127 @@
+{
+  "butterfly": {
+    "src": "assets/img/legacy/birthday-cake.jpg",
+    "width": 828,
+    "height": 828,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "daisySlab": {
+    "src": "assets/img/legacy/customcake.jpg",
+    "width": 828,
+    "height": 828,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "weddingTier": {
+    "src": "assets/img/legacy/wedding-cake.jpg",
+    "width": 828,
+    "height": 828,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "weddingCouple": {
+    "src": "assets/img/legacy/wedding.jpg",
+    "width": 593,
+    "height": 593,
+    "widths": [
+      480
+    ]
+  },
+  "heartCake": {
+    "src": "assets/img/legacy/giftjpg.jpg",
+    "width": 828,
+    "height": 1104,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "cupcakeBox": {
+    "src": "assets/img/legacy/cup-cake.jpg",
+    "width": 828,
+    "height": 828,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "owner": {
+    "src": "assets/img/legacy/hero-cake.jpeg",
+    "width": 1179,
+    "height": 1560,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "jarCakes": {
+    "src": "assets/img/legacy/jar-cake.jpeg",
+    "width": 1024,
+    "height": 1024,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "brownies": {
+    "src": "assets/img/legacy/brownies.jpg",
+    "width": 828,
+    "height": 828,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "rosette": {
+    "src": "assets/img/google/wanderlog-1.jpg",
+    "width": 810,
+    "height": 1080,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "goldBalloon": {
+    "src": "assets/img/google/wanderlog-2.jpg",
+    "width": 810,
+    "height": 1080,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "safari": {
+    "src": "assets/img/google/wanderlog-3.jpg",
+    "width": 1620,
+    "height": 1080,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ]
+  },
+  "reelDelivery": {
+    "src": "assets/img/fb/reel1.jpg",
+    "width": 675,
+    "height": 1200,
+    "widths": [
+      480
+    ]
+  },
+  "reelCutting": {
+    "src": "assets/img/fb/reel2.jpg",
+    "width": 675,
+    "height": 1200,
+    "widths": [
+      480
+    ]
+  }
+}
