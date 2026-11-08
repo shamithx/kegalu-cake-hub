@@ -199,28 +199,12 @@ export const reviews = {
 
 These live at the top of each file in `src/` as `title`, `description`, `og:*` and canonical tokens. The canonical host is currently `https://kegalucakehub.pages.dev`. If a custom domain is connected, update `site.url` and the canonical/OG values plus the sitemap and robots generators in `scripts/build.js`.
 
-## What is deliberately not published
+## Content policy
 
-These were not verifiable and must not be invented:
-
-- Delivery charges or guaranteed delivery areas (the site says to confirm by WhatsApp).
-- Opening hours.
-- Payment methods.
-- Final standard cake prices.
-- Final wedding/custom quotes.
-- Review wording beyond the Google aggregate.
-
-## Owner confirmations and assets still needed
-
-1. **Four final standard prices** — 500g Vanilla, 500g Chocolate, 1kg Vanilla, 1kg Chocolate.
-2. **Address** — confirm `280 Kandy Road, Kegalle 71000` and the map pin.
-3. **Review permission** — confirm whether the three old-website quotes are genuine and may be republished. Ideally add current Google review text via the owner's Business Profile.
-4. **Facebook links** — confirm the featured posts/Reels still represent the business and are public; refresh periodically.
-5. **Photo rights** — owner permission for every cake/customer photo used.
-6. **Delivery, hours and payment** — provide only if the business wants them published.
-7. **Custom domain and email** — optional; update `site.url` if added.
-8. **Hosting access** — Cloudflare account access is required for Pages deploys; the site is already deployed there. Netlify credentials are only needed if the Netlify copy is kept in sync.
-9. **Google Places API** — optional, only for automatic review syncing; requires a paid/qualified Google Cloud setup and a server-side key.
+- Nothing unverified is invented: prices, delivery charges, opening hours, payment methods and review quotes come from the owner or are left out.
+- A cake without a confirmed price renders **Price to be confirmed**, and the generated WhatsApp message never contains a fabricated number.
+- Customer photos and review text are published only with the owner's permission.
+- Contact details and social links come from the business's own public pages.
 
 ## Testing status
 
